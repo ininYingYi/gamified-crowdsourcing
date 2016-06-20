@@ -2,8 +2,10 @@
 
 There are three components.
 
-web have to in web server.
+Required: PHP on web server 
 
-broker need to run on web server.
+1. /Web working on apache2 Web server
+2. /borker working on apache2 Web server
+3. crowdsourcingGame is an android studio project. 
 
-crowdsourcingGame is an android app. you can edit via Android studio.
+
