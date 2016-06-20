@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nthu.nmsl.crowdsourcinggame" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAhNmAY3MGgi4lLxgEC9icqxJPZM7NrEO0"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity
+            android:name=".activities.StartupActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MapViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_map_view"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+    </application>
+
+    <!-- Minimum permissions for Beyondar -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- For Beyondar this is not mandatory unless you want to load something from Internet (for instance images) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- For GPS sensor -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name= "android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- BeyondAR needs the following features -->
+    <uses-feature android:name="android.hardware.camera" />
+    <permission android:name="android.hardware.sensor.accelerometer" />
+    <uses-feature android:name="android.hardware.sensor.compass" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+</manifest>

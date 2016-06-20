@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/query_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#c8ffffff">
+
+        <LinearLayout
+	        android:layout_width="wrap_content"
+            android:layout_weight="0.99"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+    
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		    	<TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+                    android:textSize="12dp"
+			        android:text="Query: " />
+                
+			    <EditText
+		            android:id="@+id/queried_context"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:maxWidth="150dip"
+		            android:maxHeight="50dip"
+                    android:textSize="12dp"
+		            android:text="IsSitting"/>
+			    
+			    
+		    </LinearLayout>
+			    
+		    <LinearLayout
+		        android:id="@+id/start_date" 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		    	
+		        <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+                    android:textSize="12dp"
+			        android:text="From: " />
+		        
+		        <EditText
+		            android:id="@+id/start_date_edit"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+                    android:textSize="12dp"
+			        android:text="" />
+		        
+		       <EditText
+		           android:id="@+id/start_time_edit"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+                   android:textSize="12dp"
+		           android:text="Pick start time"/>
+		       
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/end_date" 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		    	
+		        
+		        <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+                    android:textSize="12dp"
+			        android:text="To: " />
+		        
+		        <EditText
+		            android:id="@+id/end_date_edit"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+                    android:textSize="12dp"
+			        android:text="" />
+		        
+		       <EditText
+		           android:id="@+id/end_time_edit"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+                   android:textSize="12dp"
+		           android:text="Pick start time"/>
+		       
+		    </LinearLayout>
+		    
+        </LinearLayout>
+
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.01">
+
+            <Button
+                android:id="@+id/list_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Query List"
+                android:layout_gravity="right"
+                android:textSize="12dp" />
+            <Button
+                android:id="@+id/submit_query_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="12dp"
+                android:layout_gravity="right"/>
+
+        </LinearLayout>
+
+	</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_draw_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </RelativeLayout>
+
+</LinearLayout>

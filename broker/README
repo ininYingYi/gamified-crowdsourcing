@@ -1,0 +1,8 @@
+Crowdsourcing Broker
+
+Build:
+Change direction to (project)/broker and excute build.sh.
+
+Run:
+Change direction to (project)/broker and excute run.sh.
+Type <ctrl>-c while the server running to stop the server. 

@@ -1,0 +1,117 @@
+body {
+	background-image: url("../img/Ted.png");
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#container {
+	width: 1024px;
+	height: 657px;
+	position: relative;
+	min-height: 500px;
+	margin: 0px auto;
+}
+
+#title {
+	width: 100%;
+	height: 15%;
+	position: relative;
+	margin: 10px;
+	text-align: center;
+}
+
+#content {
+	width: 70%;
+	height: 70%;
+	position: relative;
+	margin: 0 auto;
+	background-color: white;
+	opacity: 0.9;
+}
+
+#leftContainer {
+	width: 97%;
+	height: 100%;
+	float: left;
+	position: absolute;
+	margin: 10px;
+	margin-right: 0px;
+}
+
+#rightContainer {
+    width: 95%;
+    height: 97%;
+    position: absolute;
+    top: 10px;
+    left: 22px;
+    display: none;
+}
+
+.table {
+	float: left;
+}
+
+.list {
+	height: 30px;
+	margin: 10px;
+	background-color: #00FF99;
+}
+
+#listInform {
+	background-color: #00FFFF;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+#userInform {
+	float: left;
+	left: 38px;
+	margin: 10px;
+	position: relative;
+}
+
+#missionImg {
+	margin-top: 20px;
+	margin-right: 50px;
+    height: 95%;
+	overflow: hidden;
+	float: right;
+	position: relative;
+}
+
+#map {
+	width: 48%;
+	height: 95%;
+	position: relative;
+	background-color: white;
+	opacity: 1.0;
+	margin-top: 20px;
+	float: left;
+}
+
+#buttom {
+	width: 100%;
+	position: absolute;
+	margin: 10px;
+	bottom: 10px;
+}
+
+#titleName {
+	font-size: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+#subTitle {
+	font-size: 25px;
+    color: black;
+}
+
+#labDescription {
+	font-size: 17px;
+    color: black;
+    position: relative;;
+    margin: 10px auto;
+    text-align: center;
+}
